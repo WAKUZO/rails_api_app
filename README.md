@@ -1,13 +1,3 @@
-# 環境
-
-Apple M1 Pro
-macOS BigSur 12.1
-Docker Engine 20.10.12
-Docker Compose 1.29.2
-Ruby 3.1
-Ruby on Rails 7.0.1
-MySQL　5.7
-
 # ①ディレクトリを作成
 
 ```
@@ -187,6 +177,8 @@ http://localhost:3001/ にアクセスする
 
 # ローカルで動かす
 
+git clone後
+
 ```
 docker-compose build
 docker-compose run --rm web rails db:create
@@ -195,6 +187,15 @@ docker-compose up　-d
 
 http://localhost:3001/ にアクセス
 
-### 参考
-https://qiita.com/croquette0212/items/7b99d9339fd773ddf20b
-https://utouto97.hatenablog.com/entry/2022/03/15/092924
+
+# 環境
+
+```
+Apple M1 Pro
+macOS BigSur 12.1
+Docker Engine 20.10.12
+Docker Compose 1.29.2
+Ruby 3.1
+Ruby on Rails 7.0.1
+MySQL　5.7
+```
