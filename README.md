@@ -144,6 +144,8 @@ apiモードでrails new
 
 Dockerfileで設定したpasswordとhost名を修正する
 
+**config/database.yml**
+
 ```yml:config/database.yml
 default: &default
   adapter: mysql2
