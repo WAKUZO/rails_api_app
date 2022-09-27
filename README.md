@@ -11,6 +11,7 @@ cd rails_api_app
 % touch {docker-compose.yml,Dockerfile,Gemfile,Gemfile.lock,entrypoint.sh}
 ```
 
+**Dockerfile**
 ```sh:Dockerfile
 # FROM：使用するイメージ、バージョン
 FROM ruby:3.1
@@ -54,6 +55,7 @@ Bundlerのバージョンが2.3.7だと`NameError: uninitialized constant Gem::S
 https://qiita.com/P-man_Brown/items/32fdba14e88219f8d2f0
 
 
+**docker-compose.yml**
 ```sh:docker-compose.yml
 version: '3'
 services:
@@ -96,6 +98,7 @@ volumes:
 
 GemfileでRails 7系を指定する
 
+**Gemfile**
 ```:Gemfile
 source 'https://rubygems.org'
 gem 'rails', '~>7.0.3'
@@ -103,6 +106,7 @@ gem 'rails', '~>7.0.3'
 
 特定のファイルが既に存在する場合にサーバーの再起動を妨げる Rails 固有の問題を修正するエントリポイントスクリプトを提供します。このスクリプトは、コンテナが開始されるたびに実行されます。
 
+**entrypoint.sh**
 ```sh:entrypoint.sh
 # set -e は「エラーが発生するとスクリプトを終了する」オプション
 #!/bin/bash
